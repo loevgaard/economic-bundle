@@ -2,8 +2,9 @@ services:
     loevgaard_economic.client:
         class: GuzzleHttp\Client
         arguments:
-            base_uri: "%economic.base_uri%"
-            headers:
-                X-AppSecretToken: "%economic.app_secret_token%"
-                X-AgreementGrantToken: "%economic.agreement_grant_token%"
-                Content-Type: application/json
+            -
+                base_uri: "%loevgaard_economic.base_uri%"
+                headers:
+                    X-AppSecretToken: "%loevgaard_economic.app_secret_token%"
+                    X-AgreementGrantToken: "%loevgaard_economic.agreement_grant_token%"
+                    Content-Type: application/json
