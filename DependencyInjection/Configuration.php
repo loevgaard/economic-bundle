@@ -9,7 +9,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('economic');
+        $rootNode = $treeBuilder->root('loevgaard_economic');
 
         $rootNode
             ->children()
