@@ -4,6 +4,8 @@ services:
         arguments:
             -
                 base_uri: "%loevgaard_economic.base_uri%"
+                connect_timeout: "%loevgaard_economic.connect_timeout%"
+                timeout: "%loevgaard_economic.timeout%"
                 headers:
                     X-AppSecretToken: "%loevgaard_economic.app_secret_token%"
                     X-AgreementGrantToken: "%loevgaard_economic.agreement_grant_token%"
